@@ -1,2 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Project</title>
 
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
+<body>
+
+    <main class="auth">
+
+        <div class="auth__container">
+
+            <section class="auth__form">
+                <h1>Sign up</h1>
+                <p class="subtitle">Create your account to start listening</p>
+
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your e-mail" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" placeholder="Create a password" required>
+                    </div>
+
+                    <div class="options">
+                        <label>
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn primary">Sign up</button>
+
+                    <div class="separator">Or</div>
+
+                    <button type="button" class="btn google">
+                        <img src="assets/icones/google.png" alt="Google">
+                        Continue with Google
+                    </button>
+
+                    <button type="button" class="btn apple">
+                        <img src="assets/icones/apple.png" alt="Apple">
+                        Continue with Apple
+                    </button>
+                </form>
+
+                <p class="redirect">
+                    Already have an account? <a href="index.html">Sign in</a>
+                </p>
+            </section>
+
+            <section class="auth__image">
+                <img src="assets/images/femme.jpg" alt="Music illustration">
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
