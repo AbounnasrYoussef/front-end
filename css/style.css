@@ -1,16 +1,17 @@
-
-
+/* ================= RESET ================= */
 * {
     margin: 0;
-    padding : 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
 }
+
+/* ================= AUTH (SIGN IN / SIGN UP) ================= */
 .auth {
     min-height: 100vh;
     display: flex;
@@ -18,25 +19,11 @@ body {
     align-items: center;
 }
 
-.auth__form {
-    flex: 1;
-    padding: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.auth__form h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
 .auth__container {
     width: 100%;
     max-width: 1200px;
     min-height: 80vh;
     display: flex;
-    background: #000;
 }
 
 .auth__form {
@@ -47,6 +34,15 @@ body {
     justify-content: center;
 }
 
+.auth__form h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
 
 .auth__image {
     flex: 1;
@@ -58,23 +54,7 @@ body {
     object-fit: cover;
 }
 
-
-.subtitle {
-    opacity: 0.8;
-    margin-bottom: 40px;
-}
-
-
-.auth__image {
-    flex: 1;
-}
-
-.auth__image {
-    width: 100;
-    height: 100;
-    object-fit: cover;
-}
-
+/* ================= FORM ================= */
 form {
     width: 100%;
     max-width: 420px;
@@ -84,11 +64,11 @@ form {
     margin-bottom: 20px;
 }
 
-.input-group  input {
+.input-group input {
     width: 100%;
     padding: 14px 16px;
     background: transparent;
-    border : 1.5px solid #fff;
+    border: 1.5px solid #fff;
     border-radius: 10px;
     color: #fff;
     font-size: 14px;
@@ -99,43 +79,58 @@ form {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.input-group input:focus {
-    border-color: #ffffff;
-}
-
 .options {
     margin-bottom: 30px;
     font-size: 14px;
-}
-
-.options {
-    display:  flex;
-    align-items:  center;
+    display: flex;
+    align-items: center;
     gap: 8px;
-    cursor: pointer;
 }
 
+/* ================= BUTTONS ================= */
 .btn {
     width: 100%;
     padding: 14px;
     border-radius: 10px;
-    border : none;
+    border: none;
     font-size: 15px;
     cursor: pointer;
     margin-bottom: 15px;
 }
 
 .btn.primary {
-    background: #ffffff;
-    color : #000000;
+    background: #fff;
+    color: #000;
     font-weight: bold;
 }
 
 .btn.primary:hover {
-    opacity :0.9;
+    opacity: 0.9;
 }
 
+.btn.google,
+.btn.apple {
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
+.btn.google:hover,
+.btn.apple:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn img {
+    width: 18px;
+    height: 18px;
+}
+
+/* ================= SEPARATOR ================= */
 .separator {
     text-align: center;
     margin: 25px 0;
@@ -152,28 +147,11 @@ form {
     height: 1px;
     background: rgba(255, 255, 255, 0.3);
 }
-.separator::before {
-    left : 0;
-}
 
-.separator::after {
-    right: 0;
-}
+.separator::before { left: 0; }
+.separator::after { right: 0; }
 
-.btn.google,
-.btn.apple {
-    background: transparent;
-    color: #fff;
-    border: 1.5px solid #fff;
-    font-weight: 500;
-}
-
-
-.btn.google:hover,
-.btn.apple:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
+/* ================= REDIRECT ================= */
 .redirect {
     margin-top: 30px;
     font-size: 14px;
@@ -190,23 +168,10 @@ form {
     text-decoration: underline;
 }
 
-.btn.google,
-.btn.apple {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.btn img {
-    width: 18px;
-    height: 18px;
-}
-
-/* ===== NAVBAR ===== */
+/* ================= NAVBAR ================= */
 .navbar {
     height: 70px;
-    background: #000;
+    background: #111;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -241,58 +206,12 @@ form {
     border-radius: 50%;
 }
 
-/* ===== PAGE ===== */
+/* ================= MAIN PAGE ================= */
 .page {
     padding: 40px;
 }
 
-
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #0f0f0f;
-    color: #fff;
-}
-
-/* NAVBAR */
-.navbar {
-    height: 70px;
-    background: #111;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-}
-
-.navbar__menu a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #aaa;
-}
-
-.navbar__menu a.active {
-    color: #fff;
-    font-weight: bold;
-}
-
-.navbar__profile img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-/* MAIN PAGE */
-.page {
-    padding: 30px;
-}
-
-/* HERO */
+/* ================= HOME ================= */
 .hero {
     background: linear-gradient(135deg, #7b2cff, #ff2c78);
     padding: 60px;
@@ -305,16 +224,10 @@ body {
     margin-bottom: 10px;
 }
 
-/* SECTIONS */
 .section {
     margin-bottom: 40px;
 }
 
-.section h2 {
-    margin-bottom: 20px;
-}
-
-/* CARDS */
 .cards {
     display: flex;
     gap: 20px;
@@ -326,14 +239,17 @@ body {
     border-radius: 15px;
     width: 150px;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+}
 
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
     .auth__container {
         flex-direction: column;
-        max-width: 100%;
-        min-height: 100vh;
     }
 
     .auth__image {
@@ -343,10 +259,12 @@ body {
     .auth__form {
         padding: 40px 20px;
     }
-}
 
-@media (max-width: 768px) {
     .navbar__menu {
         display: none;
+    }
+
+    .cards {
+        flex-direction: column;
     }
 }
