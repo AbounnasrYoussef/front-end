@@ -203,8 +203,130 @@ form {
     height: 18px;
 }
 
+/* ===== NAVBAR ===== */
+.navbar {
+    height: 70px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar__logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar__menu a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar__menu a.active,
+.navbar__menu a:hover {
+    color: #fff;
+}
+
+.navbar__profile img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+/* ===== PAGE ===== */
+.page {
+    padding: 40px;
+}
 
 
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 70px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.navbar__menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #aaa;
+}
+
+.navbar__menu a.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar__profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* MAIN PAGE */
+.page {
+    padding: 30px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #7b2cff, #ff2c78);
+    padding: 60px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* SECTIONS */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    width: 150px;
+    text-align: center;
+}
 
 
 @media (max-width: 768px) {
@@ -223,3 +345,8 @@ form {
     }
 }
 
+@media (max-width: 768px) {
+    .navbar__menu {
+        display: none;
+    }
+}
