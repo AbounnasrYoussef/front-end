@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Platform</title>
+    <title>Music Platform - Account</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -11,13 +11,13 @@
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <div class="navbar__logo">Music</div>
+        <div class="navbar__logo">NEVIS</div>
 
         <nav class="navbar__menu">
-            <a href="home.html" class="active">Home</a>
+            <a href="home.html">Home</a>
             <a href="news.html">News</a>
             <a href="concert.html">Concert</a>
-            <a href="account.html">Account</a>
+            <a href="account.html" class="active">Account</a>
             <a href="settings.html">Settings</a>
         </nav>
 
@@ -30,9 +30,126 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="page">
-        <h1>Account</h1>
-        <p>Welcome to the music platform.</p>
+    <main class="page account">
+        
+        <div class="account__container">
+            
+            <!-- SIDEBAR -->
+            <aside class="account__sidebar">
+                <div class="account__info">
+                    <img src="assets/images/ysf.jpeg" alt="Profile" class="account__avatar">
+                    <h2>Youssef Abounnasr</h2>
+                    <p class="account__plan">Premium Member</p>
+                    <p class="account__since">Member since 2023</p>
+                </div>
+
+                <nav class="account__nav">
+                    <a href="#" class="account__nav-item active">
+                        <span class="account__nav-icon">👤</span>
+                        Profile
+                    </a>
+                    <a href="#" class="account__nav-item">
+                        <span class="account__nav-icon">🎵</span>
+                        My Music
+                    </a>
+                    <a href="#" class="account__nav-item">
+                        <span class="account__nav-icon">❤️</span>
+                        Favorites
+                    </a>
+                    <a href="#" class="account__nav-item">
+                        <span class="account__nav-icon">📥</span>
+                        Downloads
+                    </a>
+                    <a href="#" class="account__nav-item">
+                        <span class="account__nav-icon">💰</span>
+                        Subscription
+                    </a>
+                    <a href="#" class="account__nav-item">
+                        <span class="account__nav-icon">⚙️</span>
+                        Settings
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- CONTENT -->
+            <div class="account__content">
+                <h1>My Account</h1>
+                
+                <!-- STATS -->
+                <div class="account__stats">
+                    <div class="stat-card">
+                        <h3>Listening Time</h3>
+                        <p class="stat-card__value">124 hours</p>
+                        <p class="stat-card__label">This month</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Favorite Artists</h3>
+                        <p class="stat-card__value">47</p>
+                        <p class="stat-card__label">Artists followed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Playlists</h3>
+                        <p class="stat-card__value">12</p>
+                        <p class="stat-card__label">Created playlists</p>
+                    </div>
+                </div>
+
+                <!-- RECENT ACTIVITY -->
+                <section class="section">
+                    <h2>Recent Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-item__icon">🎵</div>
+                            <div class="activity-item__content">
+                                <p>You listened to <strong>"Summer Vibes"</strong></p>
+                                <span class="activity-item__time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-item__icon">❤️</div>
+                            <div class="activity-item__content">
+                                <p>You liked <strong>"Midnight Dreams"</strong></p>
+                                <span class="activity-item__time">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-item__icon">➕</div>
+                            <div class="activity-item__content">
+                                <p>You added 3 songs to <strong>"Workout Mix"</strong></p>
+                                <span class="activity-item__time">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MY PLAYLISTS -->
+                <section class="section">
+                    <div class="section__header">
+                        <h2>My Playlists</h2>
+                        <button class="btn btn-small">Create New</button>
+                    </div>
+                    
+                    <div class="cards">
+                        <div class="card playlist-card">
+                            <div class="playlist-card__image" style="background: linear-gradient(135deg, #ff6b6b, #4ecdc4);"></div>
+                            <h3>Morning Coffee</h3>
+                            <p>24 tracks • 1.5 hours</p>
+                        </div>
+                        <div class="card playlist-card">
+                            <div class="playlist-card__image" style="background: linear-gradient(135deg, #7b2cff, #ff2c78);"></div>
+                            <h3>Road Trip</h3>
+                            <p>18 tracks • 1.2 hours</p>
+                        </div>
+                        <div class="card playlist-card">
+                            <div class="playlist-card__image" style="background: linear-gradient(135deg, #00b4d8, #90be6d);"></div>
+                            <h3>Study Session</h3>
+                            <p>32 tracks • 2 hours</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
     </main>
 
     <script src="js/main.js"></script>

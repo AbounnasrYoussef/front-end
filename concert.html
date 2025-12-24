@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Platform</title>
+    <title>Music Platform - Concerts</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -11,12 +11,12 @@
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <div class="navbar__logo">Music</div>
+        <div class="navbar__logo">NEVIS</div>
 
         <nav class="navbar__menu">
-            <a href="home.html" class="active">Home</a>
+            <a href="home.html">Home</a>
             <a href="news.html">News</a>
-            <a href="concert.html">Concert</a>
+            <a href="concert.html" class="active">Concert</a>
             <a href="account.html">Account</a>
             <a href="settings.html">Settings</a>
         </nav>
@@ -30,9 +30,149 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="page">
-        <h1>Concert</h1>
-        <p>Welcome to the music platform.</p>
+    <main class="page concert">
+        
+        <!-- HERO -->
+        <section class="hero concert-hero">
+            <h1>Upcoming Concerts</h1>
+            <p>Experience live music like never before</p>
+            <div class="concert-hero__stats">
+                <div class="stat">12+ Cities</div>
+                <div class="stat">45+ Artists</div>
+                <div class="stat">80k+ Tickets Sold</div>
+            </div>
+        </section>
+
+        <!-- FILTERS -->
+        <div class="concert-filters">
+            <button class="filter-btn active">All Concerts</button>
+            <button class="filter-btn">Upcoming</button>
+            <button class="filter-btn">Near You</button>
+            <button class="filter-btn">Popular</button>
+            <button class="filter-btn">Festivals</button>
+        </div>
+
+        <!-- CONCERTS GRID -->
+        <section class="section">
+            <div class="section__header">
+                <h2>Featured Concerts</h2>
+                <a href="#" class="section__link">View Calendar</a>
+            </div>
+
+            <div class="concert-grid">
+                <!-- Concert 1 -->
+                <div class="concert-card">
+                    <div class="concert-card__image" style="background: linear-gradient(135deg, #ff6b6b, #4ecdc4);">
+                        <span class="concert-card__date">DEC 28</span>
+                    </div>
+                    <div class="concert-card__content">
+                        <h3>NEVIS World Tour</h3>
+                        <p class="concert-card__location">📍 Paris, France</p>
+                        <p class="concert-card__venue">Stade de France</p>
+                        <div class="concert-card__info">
+                            <span class="concert-card__time">⏰ 20:00 PM</span>
+                            <span class="concert-card__price">💰 From €45</span>
+                        </div>
+                        <button class="btn primary concert-card__btn">Get Tickets</button>
+                    </div>
+                </div>
+
+                <!-- Concert 2 -->
+                <div class="concert-card">
+                    <div class="concert-card__image" style="background: linear-gradient(135deg, #7b2cff, #ff2c78);">
+                        <span class="concert-card__date">JAN 15</span>
+                    </div>
+                    <div class="concert-card__content">
+                        <h3>Summer Festival 2024</h3>
+                        <p class="concert-card__location">📍 Barcelona, Spain</p>
+                        <p class="concert-card__venue">Razzmatazz Club</p>
+                        <div class="concert-card__info">
+                            <span class="concert-card__time">⏰ 19:30 PM</span>
+                            <span class="concert-card__price">💰 From €35</span>
+                        </div>
+                        <button class="btn primary concert-card__btn">Get Tickets</button>
+                    </div>
+                </div>
+
+                <!-- Concert 3 -->
+                <div class="concert-card">
+                    <div class="concert-card__image" style="background: linear-gradient(135deg, #00b4d8, #90be6d);">
+                        <span class="concert-card__date">FEB 02</span>
+                    </div>
+                    <div class="concert-card__content">
+                        <h3>Electronic Night</h3>
+                        <p class="concert-card__location">📍 Berlin, Germany</p>
+                        <p class="concert-card__venue">Berghain</p>
+                        <div class="concert-card__info">
+                            <span class="concert-card__time">⏰ 22:00 PM</span>
+                            <span class="concert-card__price">💰 From €30</span>
+                        </div>
+                        <button class="btn primary concert-card__btn">Get Tickets</button>
+                    </div>
+                </div>
+
+                <!-- Concert 4 -->
+                <div class="concert-card">
+                    <div class="concert-card__image" style="background: linear-gradient(135deg, #ff9a00, #ff0058);">
+                        <span class="concert-card__date">FEB 20</span>
+                    </div>
+                    <div class="concert-card__content">
+                        <h3>Rock Legends Live</h3>
+                        <p class="concert-card__location">📍 London, UK</p>
+                        <p class="concert-card__venue">O2 Arena</p>
+                        <div class="concert-card__info">
+                            <span class="concert-card__time">⏰ 18:00 PM</span>
+                            <span class="concert-card__price">💰 From €65</span>
+                        </div>
+                        <button class="btn primary concert-card__btn">Get Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPCOMING EVENTS -->
+        <section class="section">
+            <h2>Upcoming Events This Week</h2>
+            
+            <div class="events-list">
+                <div class="event-item">
+                    <div class="event-item__date">
+                        <span class="event-item__day">MON</span>
+                        <span class="event-item__num">25</span>
+                    </div>
+                    <div class="event-item__info">
+                        <h3>Jazz Night</h3>
+                        <p>Blue Note Club • 21:00</p>
+                    </div>
+                    <button class="btn btn-small">Remind Me</button>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-item__date">
+                        <span class="event-item__day">TUE</span>
+                        <span class="event-item__num">26</span>
+                    </div>
+                    <div class="event-item__info">
+                        <h3>Indie Showcase</h3>
+                        <p>The Garage • 20:30</p>
+                    </div>
+                    <button class="btn btn-small">Remind Me</button>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-item__date">
+                        <span class="event-item__day">FRI</span>
+                        <span class="event-item__num">29</span>
+                    </div>
+                    <div class="event-item__info">
+                        <h3>DJ Marathon</h3>
+                        <p>Fabric • 23:00</p>
+                    </div>
+                    <button class="btn btn-small">Remind Me</button>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="js/main.js"></script>
